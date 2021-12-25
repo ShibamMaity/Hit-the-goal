@@ -73,7 +73,7 @@ function my_keydown(e)
 	
 	function up()
 	{
-		if(player_y >=5)
+		if(ball_y >=38)
 		{
 			ball_y = ball_y - block_image_height;
 			console.log("block image height = " + block_image_height);
@@ -85,7 +85,7 @@ function my_keydown(e)
 
 	function down()
 	{
-		 if(player_y <=450)
+		 if(ball_y <=40)
 	     {
           ball_y = ball_y + block_image_height;
           console.log("block image height = " + block_image_height);
@@ -97,7 +97,7 @@ function my_keydown(e)
 
 	function left()
 	{
-		if(ball_x >5)
+		if(ball_x >37)
 		{
 			ball_x = ball_x - block_image_width;
 			console.log("block image width = " + block_image_width);
@@ -109,7 +109,7 @@ function my_keydown(e)
 
 	function right()
 	{
-		if(ball_x <=1050)
+		if(ball_x <=39)
 		{
 			ball_x = ball_x + block_image_width;
 			console.log("block image width = " + block_image_width);
